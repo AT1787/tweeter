@@ -17,9 +17,31 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+main.container {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f1ec;
+}
+
+footer {
+  padding: 0.5em;
+  font-size: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #545149;
+}
+
+
