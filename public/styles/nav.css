@@ -1,0 +1,27 @@
+nav {
+  position:fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 120px;
+  width: 100%;
+  background-color:  #4056A1;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 1.5em;
+}
+
+nav span:nth-child(1) {
+    font-family: 'Bungee', sans-serif;
+  }
+
+nav span:nth-child(2) {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+  }
+
+  nav span:nth-child(2) span{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color: red;
+  }
