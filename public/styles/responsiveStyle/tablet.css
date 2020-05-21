@@ -9,6 +9,7 @@ body {
     margin-left: 2em;
     width: 33.3%;
     height: 20em;
+    border: 2px solid black;
 }
 
 main.container {
@@ -33,13 +34,12 @@ section.posted-tweet article {
     align-items: center;
     height: 200px;
     width: 100%;
-    background-color: #f4f1ec;
     margin-bottom: 1.5em;
     border: 2px solid black;
 }
 
 section.posted-tweet article div {
-font-size: 15px;
+font-size: 20px;
 }
 
 

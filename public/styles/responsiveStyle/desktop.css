@@ -1,42 +1,3 @@
-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#mainHeader {
-    margin-top: 10em;
-    margin-left: 2em;
-    width: 33.3%;
-    height: 20em;
-}
-
-main.container {
-  margin-top: 10em;
-  width: 50%;
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
-
-section.posted-tweet {
-    margin-top: 1.5em;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-section.posted-tweet article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 200px;
-    width: 100%;
-    background-color: #f4f1ec;
-    margin-bottom: 1.5em;
-    border: 2px solid black;
-}
 
 
 section.posted-tweet article header {
@@ -50,14 +11,8 @@ section.posted-tweet article header {
     justify-content: space-between;
 }
 
-section.posted-tweet article header span:nth-child(2) {
-    margin-right: auto;
-    margin-top: 2px;
-    font-size: 17px;
-    padding-left: 0.5em;
-}
 
 section.posted-tweet article div {
-    font-size: 20px;
+    font-size: 25px;
     }
     

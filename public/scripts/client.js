@@ -14,7 +14,7 @@ const escape =  function(str) {
 
 const createTweetElement = function(tweetObj, callback) {
 
- const newDate = moment.unix(`${tweetObj['created_at']}`)
+ const newDate = moment(`/Date(${tweetObj['created_at']})`).fromNow()
 
  const articleTweet = `
     <article class="tweet">
