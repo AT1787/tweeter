@@ -30,17 +30,17 @@ nav .composer span:nth-child(1) {
 
   @keyframes arrow {
     0% { top: 0px; }
-    100% { top: 5px; }
+    100% { top: 10px; }
   }
 
- #test {
+  nav .composer span:nth-child(2) {
     position: relative;
     height: 100px;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     color: red;
     animation-name: arrow;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-play-state: paused;
