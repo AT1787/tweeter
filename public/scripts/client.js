@@ -92,6 +92,5 @@ const renderTweets = function(tweets) {
 
   loadTweets(renderTweets)
 
-
 })
 
