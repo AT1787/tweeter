@@ -26,14 +26,14 @@
     <!-- Posted Tweet -->
     <link rel="stylesheet" href="/styles/posted-tweet.css" type="text/css" />
 
+     <!-- Tablet CSS -->
+     <link rel="stylesheet" media="screen and (min-width:768px)" href="/styles/responsiveStyle/tablet.css" type="text/css" />
+
      <!-- Desktop CSS -->
     <link rel="stylesheet" media="screen and (min-width:1024px)" href="/styles/responsiveStyle/desktop.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- JS UI -->
-    <script scr="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- Char Counter -->
     <script type='text/javascript' src='/scripts/composer-char-counter.js'></script>
@@ -41,7 +41,8 @@
     <!-- Scrolling and Toggle Features -->
     <script type='text/javascript' src='/scripts/composer-morefeatures.js'></script>
 
-   
+    <!-- Moment JS-->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -59,7 +60,11 @@
     </nav>
     <header id='mainHeader'>
       <div>
-          <img src="/images/profile-hex.png"> 
+        <picture>
+          <source srcset="/images/profile-hex-tablet.png" media="(min-width: 768px)">
+            <source srcset="/images/profile-hex.png" media="(min-width: 1024)">
+          <img src="/images/profile-hex.png" alt='default'> 
+        </picture>
       </div>
       <br>
       <div>
@@ -85,5 +90,5 @@
       <button class='scrollUp' type="submit"><span><img src="/images/arrows.png"></span></button>
     </main>
   </body>
-  <!-- <footer>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>,  <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a>  from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></footer>--> 
+ <footer class='credit'>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>,  <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a>  from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></footer>
 </html>

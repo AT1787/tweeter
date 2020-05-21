@@ -14,7 +14,8 @@ const escape =  function(str) {
 
 const createTweetElement = function(tweetObj, callback) {
 
-  
+ const newDate = moment.unix(`${tweetObj['created_at']}`)
+
  const articleTweet = `
     <article class="tweet">
     <header>
@@ -26,7 +27,7 @@ const createTweetElement = function(tweetObj, callback) {
       <span>${callback(tweetObj['content']['text'])}</span>
     </div>
     <footer>
-      <span>${tweetObj['created_at']} </span>
+      <span>${newDate} </span>
       <span><img src='/images/symbol.png'>
       <img src='/images/square.png'>
       <img src='/images/heart.png'>

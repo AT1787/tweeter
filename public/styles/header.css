@@ -1,10 +1,11 @@
 #mainHeader {
     display: flex; 
-    height: 550px;
+    height: 30em;
     width: 100%;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+    font-size: 15px;
 }
