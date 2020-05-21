@@ -34,6 +34,31 @@ main.container {
   background-color: #f4f1ec;
 }
 
+
+@keyframes scrolly {
+  0% {  bottom: 30px; }
+  100% { bottom: 45px; }
+}
+
+.scrollUp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+  animation-name: scrolly;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
+
+
+.scrollUp:focus {
+  outline: none;
+}
+
+
 footer {
   padding: 0.5em;
   font-size: 10px;
