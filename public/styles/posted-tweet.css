@@ -17,10 +17,6 @@ section.posted-tweet article {
 }
 
 
-section.posted-tweet article:hover {
-    filter: drop-shadow(10px 15px 7px grey);
-}
-
 section.posted-tweet article header {
     margin-top: 0.5em;
     font-size: 15px;
