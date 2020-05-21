@@ -33,7 +33,7 @@ nav .composer span:nth-child(1) {
     100% { top: 5px; }
   }
 
-  nav .composer span:nth-child(2) {
+ #test {
     position: relative;
     height: 100px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -43,10 +43,8 @@ nav .composer span:nth-child(1) {
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-
+    animation-play-state: paused;
   }
 
-  nav .composer:hover{
-    animation-play-state: paused;
-    }
-  
+ 
+/* nav .composer span:nth-child(2) */

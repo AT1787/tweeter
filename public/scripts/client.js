@@ -7,6 +7,17 @@
 $(document).ready(function () {
 
 $('.error-message').hide()
+$('.new-tweet').hide()
+
+$('.composer').on('click', function() {
+  $('.new-tweet').slideDown(500)
+})
+
+$('.composer').hover(function() {
+  $('#test').css('animation-play-state', 'running')
+}, function() {
+  $('#test').css('animation-play-state', 'paused')
+})
 
 
 const escape =  function(str) {
