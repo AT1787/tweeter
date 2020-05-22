@@ -28,7 +28,7 @@ Some basic features include:
 
 !["Screenshot of 768px resolution settings and above"](https://github.com/AT1787/tweeter/blob/master/public/images/768px.png?raw=true)  
 
-!["Edit page of existing short URLs"](https://github.com/AT1787/tinyapp/blob/master/docs/editPage.png?raw=true)  
+!["Mobile screen resolution"](https://github.com/AT1787/tweeter/blob/master/public/images/below768px.png?raw=true)  
   
 
 ## Dependencies  
