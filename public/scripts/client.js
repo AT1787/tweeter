@@ -76,6 +76,9 @@ const createTweetElement = function(tweetObj, callback) {
     })
     .done(function(data) {
       loadTweets(renderTweets)
+      $('#tweet-text').val('')
+      $('.counter').text(140)
+      $('.new-tweet form textarea').focus()
     })
   }
 })
