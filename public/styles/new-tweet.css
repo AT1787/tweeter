@@ -1,3 +1,5 @@
+/* New tweet parent section and form settings */
+
 .new-tweet {
     display: flex;
     flex-direction: column;
@@ -13,7 +15,10 @@
     height: 80px;
 }
 
-.new-tweet form textarea{
+
+/* Textarea form settings */
+
+.new-tweet form textarea {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -28,6 +33,7 @@
     resize: none;
 }
 
+/* Button and tweet counter formatting */
 
 .new-tweet form div {
     display: flex;
@@ -41,6 +47,10 @@ button {
     background-color: #4056A1;
     color: white;
 }
+
+
+/* Error message settings */
+
 
 .errorcount {
     color: red;

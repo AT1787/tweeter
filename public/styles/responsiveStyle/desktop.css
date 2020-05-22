@@ -1,18 +1,17 @@
-
+/* Min-width:1024px resolution desktop settings */
 
 section.posted-tweet article header {
-    margin-top: 0.5em;
-    font-size: 15px;
-    height: 25%;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+  margin-top: 0.5em;
+  font-size: 15px;
+  height: 25%;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-
 section.posted-tweet article div {
-    font-size: 25px;
-    }
+  font-size: 20px;
+}
     

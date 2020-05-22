@@ -1,3 +1,5 @@
+/* Parent settings for size, width, border of tweet containers */
+
 section.posted-tweet {
     margin-top: 1.5em;
     display: flex;
@@ -16,6 +18,7 @@ section.posted-tweet article {
 
 }
 
+/* Header for the tweets (avatar, name, and @ID are all formatted here */
 
 section.posted-tweet article header {
     margin-top: 0.5em;
@@ -28,12 +31,17 @@ section.posted-tweet article header {
     justify-content: space-between;
 }
 
+/* Formatting for tweet name to appear next to avatar (overrides parent 'justify-content' space-between settings) */
+
+
 section.posted-tweet article header span:nth-child(2) {
     margin-right: auto;
     margin-top: 2px;
     font-size: 17px;
     padding-left: 0.5em;
 }
+
+/* Tweet body */
 
 section.posted-tweet article div{
     height: 45%;
@@ -49,6 +57,9 @@ section.posted-tweet article div{
     font-size: 15px;
     
 }
+
+/* Tweet footer - includes date and icons */
+
 
 section.posted-tweet article footer {
     margin-top: 0.5em;

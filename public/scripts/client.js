@@ -1,23 +1,15 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
 
 $(document).ready(function () {
 
-const escape =  function(str) {
-    let div = document.createElement('div');
-    div.appendChild(document.createTextNode(str));
-    return div.innerHTML;
-  }
+
+/* Takes a data object and transforms in to html template literal form before appended to the main body */
 
 const createTweetElement = function(tweetObj, callback) {
 
  const newDate = moment(`/Date(${tweetObj['created_at']})`).fromNow()
 
  const articleTweet = `
-    <article class="tweet">
+  <article class="tweet">
     <header>
       <span><img src=${tweetObj['user']['avatars']}></span>
       <span>${tweetObj['user']['name']}</span>
@@ -35,12 +27,16 @@ const createTweetElement = function(tweetObj, callback) {
     </footer>
   </article>` 
 
-  const output = $(articleTweet) 
-
-    return output
+  return $(articleTweet) 
 }
 
+/* Escape function to sanitize textarea input from user to prevent cross site scripting (XSS) */
 
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
 const renderTweets = function(tweets) {
     $('.posted-tweet').empty()
@@ -48,7 +44,6 @@ const renderTweets = function(tweets) {
     for(let key of tweetKeys) {
         $('.posted-tweet').prepend(createTweetElement(tweets[key], escape));
     }
-
   }
 
   $('.new-tweet form').on('submit', function (event) {

@@ -1,62 +1,32 @@
+/* Min-width:768px resolution settings */
+
 body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #mainHeader {
-    margin-top: 12em;
-    margin-left: 2em;
-    width: 33.3%;
-    height: 20em;
-    border: 2px solid black;
+  margin-top: 12em;
+  margin-left: 2em;
+  width: 33.3%;
+  height: 20em;
+  border: 2px solid black;
 }
 
 main.container {
   margin-top: 10em;
   width: 50%;
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 16px;  
  }
 
 section.posted-tweet {
-    margin-top: 1.5em;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-section.posted-tweet article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 200px;
-    width: 100%;
-    margin-bottom: 1.5em;
-    border: 2px solid black;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 section.posted-tweet article div {
-font-size: 20px;
-}
-
-
-section.posted-tweet article header {
-    margin-top: 0.5em;
-    font-size: 15px;
-    height: 25%;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-section.posted-tweet article header span:nth-child(2) {
-    margin-right: auto;
-    margin-top: 2px;
-    font-size: 17px;
-    padding-left: 0.5em;
+  font-size: 17px;
 }
