@@ -15,7 +15,6 @@
     height: 80px;
 }
 
-
 /* Textarea form settings */
 
 .new-tweet form textarea {
@@ -48,9 +47,7 @@ button {
     color: white;
 }
 
-
 /* Error message settings */
-
 
 .errorcount {
     color: red;

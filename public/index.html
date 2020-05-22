@@ -17,25 +17,25 @@
     <!-- Nav CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
-    <!-- Header -->
+    <!-- Header CSS -->
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
-    <!-- New Tweet -->
+    <!-- New Tweets CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
-    <!-- Posted Tweet -->
+    <!-- Posted Tweets CSS -->
     <link rel="stylesheet" href="/styles/posted-tweet.css" type="text/css" />
 
-     <!-- Tablet CSS -->
-     <link rel="stylesheet" media="screen and (min-width:768px)" href="/styles/responsiveStyle/tablet.css" type="text/css" />
+    <!-- Min-width 768px resolution (tablet) CSS -->
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="/styles/responsiveStyle/tablet.css" type="text/css" />
 
-     <!-- Desktop CSS -->
+    <!-- Min-width 1024px resolution (desktop) CSS -->
     <link rel="stylesheet" media="screen and (min-width:1024px)" href="/styles/responsiveStyle/desktop.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- Char Counter -->
+    <!-- Character Counter -->
     <script type='text/javascript' src='/scripts/composer-char-counter.js'></script>
 
     <!-- Scrolling and Toggle Features -->
@@ -49,6 +49,7 @@
   </head>
 
   <body>
+
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
@@ -56,19 +57,17 @@
         <span><b>Write</b> a new tweet<br></span>
         <span><b>↓</b></span>
       </button>
-     
     </nav>
-    <header id='mainHeader'>
+
+    <!-- Avatar photo and 'Jane Doe' name -->
+    <header class='mainHeader'>
       <div>
-          <img src="/images/profile-hex.png" alt='default'> 
+        <img src="/images/profile-hex.png" alt='default'> 
       </div>
-      <br>
-      <div>
-          <h2>Jane Doe</h2>
-      </div>
+      <div><h2>Jane Doe</h2></div>
   </header>
 
-    <!-- Page-specific (main) content here -->
+    <!-- Main container for both new tweet textarea and posted tweet sections, 'scroll up button', and footer -->
     
     <main class="container">
       <section class="new-tweet">
@@ -81,13 +80,24 @@
           </div>
         </form>
       </section>
+
       <section class="posted-tweet">
 
         <!-- Tweets show up here --->
 
       </section>
+
+        <!-- Scroll up button feature --->
+
       <button class='scrollUp' type="submit"><span><img src="/images/arrows.png"></span></button>
     </main>
   </body>
- <footer class='credit'><span>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>,  <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a>  from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></span></footer>
+
+        <!-- Footer to display credits for icon artwork --->
+
+  <footer class='credit'>
+    <span>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>,  <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a>  from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </span>
+  </footer>
+
 </html>

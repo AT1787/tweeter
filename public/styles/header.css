@@ -1,11 +1,29 @@
-#mainHeader {
-    display: flex; 
-    height: 30em;
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
-    font-size: 15px;
+/* Main header settings  */
+
+.mainHeader {
+  display: flex; 
+  height: 25em;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  font-size: 15px;
 }
+
+.mainHeader div{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.mainHeader img{
+  width: 70%;
+  height: 60%;
+  margin-top: 5em;
+}
+
+
+

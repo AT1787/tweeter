@@ -1,3 +1,5 @@
+/* jQuery event handlers for animation effects with error messages, composer buttons, and scroller */
+
 $(document).ready(function () {
 
     $('.error-message').hide()

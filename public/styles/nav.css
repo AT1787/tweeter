@@ -1,3 +1,5 @@
+/* Navigation bar container settings  */
+
 nav {
   position:fixed;
   display: flex;
@@ -11,9 +13,13 @@ nav {
   padding: 1.5em;
 }
 
+/* Custom font for 'Tweeter' logo */
+
 nav span:nth-child(1) {
-    font-family: 'Bungee', sans-serif;
+  font-family: 'Bungee', sans-serif;
   }
+
+/* 'Composer' button settings */
 
 nav .composer {
   border: none;
@@ -24,26 +30,28 @@ nav .composer:focus {
 }
 
 nav .composer span:nth-child(1) {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
   }
 
-  @keyframes arrow {
-    0% { top: 0px; }
-    100% { top: 10px; }
-  }
+nav .composer span:nth-child(2) {
+  position: relative;
+  height: 100px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  color: red;
+  animation-name: arrow;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
 
-  nav .composer span:nth-child(2) {
-    position: relative;
-    height: 100px;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    color: red;
-    animation-name: arrow;
-    animation-duration: 0.4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-play-state: paused;
-  }
+/* Toggle animation */
 
- 
+@keyframes arrow {
+  0% { top: 0px; }
+  100% { top: 10px; }
+}
+
+
